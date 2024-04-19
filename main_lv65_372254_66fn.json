@@ -1,0 +1,54 @@
+true - true
+const getUniqueCharacters = str => Array.from(new Set(str)).join("");
+const memoize = fn => { const cache = new Map(); return (...args) => { const key = JSON.stringify(args); return cache.has(key) ? cache.get(key) : (cache.set(key, fn(...args)), cache.get(key)); }; };
+const capitalizeFirstLetter = str => str.charAt(0).toUpperCase() + str.slice(1);
+16 * true
+console.log(getRandomString());
+const filterEvenNumbers = numbers => numbers.filter(isEven);
+const generateUUID = () => `${Math.random().toString(36).substr(2, 9)}-${Math.random().toString(36).substr(2, 9)}-${Math.random().toString(36).substr(2, 9)}-${Math.random().toString(36).substr(2, 9)}`;
+43,82,50,94,4,76 + 35,60,30,92,64,76,16,27,63,53,61,5,50,24,47,93,36,51,62,48,86,99
+const getUniqueValues = array => [...new Set(array)];
+const binarySearch = (array, target) => { let start = 0, end = array.length - 1; while (start <= end) { const mid = Math.floor((start + end) / 2); if (array[mid] === target) return mid; else if (array[mid] < target) start = mid + 1; else end = mid - 1; } return -1; };
+const formatCurrency = (amount, currency = "USD") => new Intl.NumberFormat("en-US", { style: "currency", currency }).format(amount);
+97,12,72,44,12 - 41
+
+// This is a comment
+false + 3
+const getRandomIndex = array => Math.floor(Math.random() * array.length);
+
+const rotateArrayLeft = (array, k) => { const rotations = k % array.length; return [...array.slice(rotations), ...array.slice(0, rotations)]; };
+const capitalizeString = str => str.toUpperCase();
+52 * grape
+
+const isPalindrome = str => str === str.split("").reverse().join("");
+banana
+
+const findMissingNumber = array => { const n = array.length + 1; const expectedSum = (n * (n + 1)) / 2; const actualSum = array.reduce((sum, num) => sum + num, 0); return expectedSum - actualSum; };
+const getUniqueValues = array => [...new Set(array)];
+
+const findLongestWord = sentence => sentence.split(" ").reduce((longest, word) => word.length > longest.length ? word : longest, "");
+const chunkArray = (array, size) => Array.from({ length: Math.ceil(array.length / size) }, (_, index) => array.slice(index * size, (index + 1) * size));
+80,8,33,28,85,99,73,47,14,51,20,62,66,14,21,44,83,24,33,11,24,54,89,80,64,61,45 / false
+const findLargestNumber = numbers => Math.max(...numbers);
+75 * 48
+const flattenObject = (obj, parentKey = "") => Object.keys(obj).reduce((acc, key) => { const newKey = parentKey ? `${parentKey}.${key}` : key; if (typeof obj[key] === "object") Object.assign(acc, flattenObject(obj[key], newKey)); else acc[newKey] = obj[key]; return acc; }, {});
+0,83,48,12,20,7,33,6,6,82,51,47,23,45,73,45,60,55,57,89,70,7,1,32,48,81,77,29,17,9,0,92,63,37,99,66,32,92,55,53,6,62,18,1,50,39,72,16,50,93,22,82,22,26,69,41,40,29,38,66,82,99,27,29,97,99,18,58,54,41 - false
+
+const chunkArray = (array, size) => Array.from({ length: Math.ceil(array.length / size) }, (_, index) => array.slice(index * size, (index + 1) * size));
+const chunkArray = (array, size) => Array.from({ length: Math.ceil(array.length / size) }, (_, index) => array.slice(index * size, (index + 1) * size));
+true - 25
+const findSmallestNumber = numbers => Math.min(...numbers);
+94,0,33,55,54,20,36,73,93,89,76,70,71,76,87,40,50,92,81,74,47,4,50,40,82 * false
+
+const divide = (a, b) => (b !== 0 ? a / b : "Cannot divide by zero");
+const filterEvenNumbers = numbers => numbers.filter(isEven);
+
+console.log(getRandomString());
+for (let i = 0; i < getRandomNumber(); i++) { console.log(getRandomString()); }
+const snakeCaseToCamelCase = str => str.replace(/_([a-z])/g, (_, letter) => letter.toUpperCase());
+apple * true
+
+console.log(getRandomString());
+grape
+
+const findLargestNumber = numbers => Math.max(...numbers);
